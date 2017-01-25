@@ -1,0 +1,65 @@
+.header {
+    height: 110px;
+    background: #fff;
+}
+
+.header .container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header .container .logo {
+    float: left;
+    height: 54px;
+    width: 182px;
+    margin-top: 40px;
+    margin-left: 28px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.header .container ul {
+    float: right;
+    margin: 48px 0px;
+}
+
+.header .container ul li {
+    float: left;
+    margin-right: 48px;
+    font-size: 16px;
+}
+
+.banner {
+    height: 570px;
+    width: 100%;
+    background: url(../img/banner.png) no-repeat;
+    overflow: hidden;
+}
+
+.banner .content {
+	/*垂直居中!!!*/
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -338px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.banner .content .banner-text {
+    background: url(../img/banner-text.png) no-repeat;
+    height: 117px;
+    width: 776px;
+}
+
+.banner .content .desc .desc-content {
+    float: left;
+}
+
+.banner .content .desc .line {
+    float: left;
+    width: 100px;
+    border-top: 1px solid #b3b3b3;
+    height: 0;
+    margin: 10px 50px 0px;
+
+}
