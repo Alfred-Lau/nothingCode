@@ -6,16 +6,23 @@ body {
 }
 
 .tab {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
     width: 80%;
     border: 1px solid #aaa;
     display: flex;
-    margin: 0 auto;
+    margin: 100px auto;
     /*text-align属性可以继承,所以在容器设置也可以!!*/
     text-align: center;
 }
 
 .tab .tab-item {
     flex: 1;
+}
+
+.tab .tab-item +.tab-item {
+    border-left: 1px solid #aaa;
 }
 
 .va {}
@@ -41,4 +48,14 @@ body {
 .inline-block .block {
     display: block;
     border: 1px solid yellow;
+}
+
+.background-attachment {
+    background-image: url(img01.jpg);
+    background-attachment: fixed;
+}
+
+
+.background-attachment .wrapper{
+    
 }
