@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('build-in')">hello</button>
+
+    <!-- script标签最好放置在这个位置 -->
+    <!-- 延迟脚本,异步脚本 -->
+    <script>
+    var el = document.getElementsByTagName('button')
+    el[0].addEventListener('click', function() {
+        alert('msg');
+    })
+    </script>
+</body>
+
+</html>
