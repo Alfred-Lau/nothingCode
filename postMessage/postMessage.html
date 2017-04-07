@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>postMessage</title>
+</head>
+
+<body>
+    <iframe id="ifr" src="//child.com:8080/subDomain.html"></iframe>
+    <script type="text/javascript">
+
+    // 最好把需要执行的代码放到 window.onload 之类的函数里面
+    window.onload = function() {
+        var ifr = document.getElementById('ifr');
+        var targetOrigin = 'http://child.com:8080'; // 若写成'http://b.com/c/proxy.html'效果一样
+        // 若写成'http://c.com'就不会执行postMessage了
+        ifr.contentWindow.postMessage('I was there!', targetOrigin);
+    };
+    </script>
+</body>
+
+</html>
