@@ -203,11 +203,21 @@
 //
 // console.log(getQueryStringArgs())
 
-var div = document.createElement('div')
-var attr = document.createAttribute('data-appid')
-attr.value = '123456'
-div.setAttributeNode(attr)
-div.title = 'Nic'
+// var div = document.createElement('div')
+// var attr = document.createAttribute('data-appid')
+// attr.value = '123456'
+// div.setAttributeNode(attr)
+// div.title = 'Nic'
+//
+// alert(div.title)
+// alert(div.dataset.appid)
 
-alert(div.title)
-alert(div.dataset.appid)
+var book = {
+    title: "javascript professional",
+    authors: ["nic"],
+    edition: 3,
+    year: 2011
+};
+
+var jsonText = JSON.stringify(book, ["edition", "year"], 4)
+console.log(jsonText)
